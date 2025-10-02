@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_awesome_utils"
+version = "0.0.1"
+description = "desc"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
