@@ -9,5 +9,4 @@ description = "desc"
 readme = "README.md"
 requires-python = ">=3.10"
 
-[tool.setuptools]
-py-modules = ["__init__", "util1"]
+[tool.setuptools.packages.find]
