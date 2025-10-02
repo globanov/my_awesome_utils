@@ -11,6 +11,7 @@ requires-python = ">=3.10"
 
 [tool.setuptools]
 py-modules = ["__init__", "util1"]
+packages = ["awesome_utils"]
 
 [tool.setuptools.package-dir]
 awesome_utils = "."
