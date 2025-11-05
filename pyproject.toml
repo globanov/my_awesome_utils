@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=45", "wheel"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -9,9 +9,9 @@ description = "desc"
 readme = "README.md"
 requires-python = ">=3.10"
 
-[tool.setuptools]
-py-modules = ["__init__", "util1"]
-packages = ["awesome_utils"]
-
 [tool.setuptools.package-dir]
-awesome_utils = "."
+my_awesome_utils = "."
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["my_awesome_utils", "my_awesome_utils.*"]
